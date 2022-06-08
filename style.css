@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+:root {
+    --primary-color: #574ef7;
+    --secondary-color: black;
+    --divider-color: #303030;
+    --red: #fa2020;
+    --off-red: #ff5c5c;
+    --green: #00bf00;
+    --off-green: #4fff4f;
+}
+
 body {
-    background-color: black;
+    background-color: var(--secondary-color);
     color: white;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -13,14 +23,95 @@ h1,p {
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
 
+.heading {
+    background-color: var(--primary-color);
+}
+.heading a {
+    font-size: 3.5rem;
+    text-shadow: 3px 3px black;
+}
+.heading span {
+    color: black;
+}
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 0 5rem;
+}
 
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 0.8rem;
+    padding: 2rem;
+}
 
+.divider {
+    height: 98%;
+    padding: 1.5px;
+    background-color: var(--divider-color);
+    margin-top: 3rem;
+}
 
+.left div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left div label {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.left div input {
+    width: 100%;
+    font-size: 1.5rem;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px var(--primary-color);
+    align-self: center;
+}
+.left div input:active {
+    box-shadow: none;
+}
 
+.show-me-btn {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    padding: 0.2rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px var(--primary-color);
+}
+.show-me-btn:active {
+    box-shadow: none;
+    transform: translateY(2px);
 
+}
+
+.output-message {
+    font-size: 1.5rem;
+    width: 90%;
+}
+
+span {
+    font-weight: 600;
+}
 
 .gif {
     width: 20rem;
+    border: none;
+    border-radius: 0.3rem;
 }
