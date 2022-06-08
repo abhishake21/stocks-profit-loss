@@ -3,7 +3,7 @@
 :root {
     --primary-color: #574ef7;
     --secondary-color: black;
-    --divider-color: #303030;
+    --divider-color: #303030bb;
     --red: #fa2020;
     --off-red: #ff5c5c;
     --green: #00bf00;
@@ -33,7 +33,6 @@ a {
 }
 .heading a {
     font-size: 3.5rem;
-    text-shadow: 3px 3px black;
 }
 .heading span {
     color: black;
@@ -98,7 +97,6 @@ main {
 .show-me-btn:active {
     box-shadow: none;
     transform: translateY(2px);
-
 }
 
 .output-message {
@@ -114,4 +112,69 @@ span {
     width: 20rem;
     border: none;
     border-radius: 0.3rem;
+}
+
+
+@media (max-width:1028px) {
+    main {
+        padding: 0;
+    }
+}
+
+@media (max-width:764px) {
+    .left div label {
+        font-size: 1.8rem;
+    }
+    .left div input {
+        width: 80%;
+        font-size: 1.4rem;
+    }
+    .output-message {
+        font-size: 1.3rem;
+    }
+    .gif {
+        width: 15rem;
+    }
+}
+
+@media (max-width:648px) {
+    main {
+        flex-direction: column;
+        height: 90vh;
+        justify-content: start;
+    }
+    .divider {
+        height: 0;
+        width: 80%;
+        margin: 0;
+    }
+    .left, .right {
+        gap: 0.5rem;
+        padding: 0.8rem;
+        flex: 0;
+    }
+    .heading a {
+        font-size: 2.5rem;
+    }
+    .show-me-btn {
+        margin: 0.8rem;
+    }
+    .left div label {
+        font-size: 1.5rem;
+    }
+    .left div input {
+        font-size: 1.3rem;
+    }
+    .gif {
+        width: 14rem;
+    }
+}
+
+@media (max-width:406px) {
+    .heading a {
+        font-size: 2rem;
+    }
+    .heading {
+        padding: 0.5rem;
+    }
 }
