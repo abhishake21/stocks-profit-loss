@@ -49,7 +49,7 @@ function defaultLayout() {
 function profitLayout() {
     header.style.backgroundColor = "var(--green)";
     headerText.style.color = 'black';
-    headerText.style.textShadow = '0.5px 0.5px white';
+    headerText.style.textShadow = 'none';
     document.body.style.backgroundColor = "var(--off-green)";
     document.body.style.color = "black";
     inputs.forEach(input => input.style.boxShadow = '3px 3px var(--green)');
@@ -59,7 +59,7 @@ function profitLayout() {
 function lossLayout() {
     header.style.backgroundColor = "var(--red)";
     headerText.style.color = 'black';
-    headerText.style.textShadow = '0.5px 0.5px white';
+    headerText.style.textShadow = 'none';
     document.body.style.backgroundColor = "var(--off-red)";
     document.body.style.color = "black";
     inputs.forEach(input => input.style.boxShadow = '3px 3px var(--red)');
